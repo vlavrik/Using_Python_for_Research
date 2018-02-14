@@ -1,14 +1,12 @@
-# Let's look at the lowercase letters.
 import string
-alphabet = ' ' + string.ascii_lowercase # Add your code here! #
-positions = {}
-# Let's look at the lowercase letters.
 
+alphabet = ' ' + string.ascii_lowercase
+positions = {}
 for i in range(27):
     positions[alphabet[i]] = i
 
-message = "hi my name is caesar"
 
+message = "hi my name is caesar"
 def encode(message, key):
 	encoded_message = str()
 	item_list = list(positions.items())
